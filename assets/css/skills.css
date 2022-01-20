@@ -56,6 +56,10 @@ transform: translateY(-10px);
     background-color: #EF3724;
     transition: .5s ;
   }
+
+  #mailtoxd {
+    opacity: 0;
+  }
 .skills-img {
   width: 90px;
   height: 90px;

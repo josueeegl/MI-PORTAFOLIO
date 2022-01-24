@@ -5,12 +5,12 @@ document.getElementById('btnSubmit').addEventListener('click', () => {
         message = document.getElementById('message').value;
     if (nombre != '' && email != '' && Subject != '' && message != '') {
         var mensaje = `Nombre: ${nombre}\n Correo: ${email} \n Asunto: ${Subject} \n Mensaje: ${message}`;
-        fetch('/correo?' + new URLSearchParams({
+        fetch('http://localhost:3000/correo?' + new URLSearchParams({
             mensaje: mensaje,
         }), {
             method: 'POST',
         }).then(res => res.json()).then(data => {
-            console.log(data);
+            console.log(data + 'hola');
             location.reload();
         });
     }

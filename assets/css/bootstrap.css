@@ -7948,7 +7948,7 @@ button.bg-dark:focus {
     float: left !important;
   }
   .float-lg-right {
-    float: right !important;
+    float: left !important;
   }
   .float-lg-none {
     float: none !important;

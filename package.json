@@ -1,0 +1,18 @@
+{
+  "name": "portafolio-correo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Josue garcia",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2",
+    "nodemailer-mailgun-transport": "^2.1.3",
+    "nodemon": "^2.0.15"
+  }
+}

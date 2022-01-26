@@ -1,0 +1,67 @@
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categorias a {
+  color: #9b9b9b;
+  margin: 10px 20px;
+  font-size: 16px;
+  box-shadow: 1px;
+  padding: 5px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.categorias a:hover {
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.15s;
+  color: #ef3724;
+  font-weight: 600;
+  border: 1px solid #ef3724;
+  border-radius: 10px;
+}
+.categorias a.activo {
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.15s;
+  background-color: #ef3724;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #ef3724;
+  border-radius: 10px;
+}
+.gridWork {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+}
+.gridWork.imagenes-cargadas {
+  opacity: 1;
+}
+.gridWork .itemWork {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.333333% - 20px);
+  min-width: 379px;
+}
+
+.gridWork .itemWork-contenido {
+  position: relative;
+}
+.gridWork .itemWork img {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
+}

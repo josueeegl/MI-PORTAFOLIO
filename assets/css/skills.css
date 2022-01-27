@@ -89,48 +89,7 @@ transform: translateY(-10px);
   width: 100px;
   z-index: 2;
 }
-#btnPokedex{
-  border: 0;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: #EF3724;
-}
-#btnPokedex:focus {
-  outline: none;
-  box-shadow: none;
-  color: #fff;
-}
-#btnPokedex:hover {
-  position: relative;
-  bottom: 3px;
-  font-size: 21px;
-  transition: .15s ;
-  color: #fff;
-}
-#btnDemo{
-  border: 0;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 20px;
-  letter-spacing: 3px;
-  color: #fff
-}
-#btnDemo:focus {
-  outline: none;
-  box-shadow: none;
-  color: #fff;
-}
-#btnDemo:hover {
-  position: relative;
-  bottom: 3px;
-  font-size: 21px;
-  transition: .15s ;
-  color: #fff;
-}
+
 @media screen and (max-width: 990px) 
 {
     .skills-container{

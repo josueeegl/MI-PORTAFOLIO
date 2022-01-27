@@ -9,7 +9,7 @@
     <title>Josué García</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+    <script src="https://kit.fontawesome.com/4296fd5651.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
     <link rel="stylesheet" type="text/css" href="css/skills.css" />
     <link rel="stylesheet" type="text/css" href="css/works.css" />
@@ -142,7 +142,6 @@
                 <div class="skills-img">
                   <img src="img/c.png" class="skills-icon" />
                 </div>
-                <h3>C#</h3>
               </div>
             </div>
             <div class="skills-box">
@@ -211,27 +210,67 @@
           <a href="#">Web</a>
           <a href="#">Escritorio</a>
         </div>
-        <section class="gridWork" id="gridWork">
-          <div class="itemWork">
-            <div class="itemWork-contenido">
-              <img src="img/work/asistente.jpeg" alt="" />
+        <div class="gridWork">
+          <div class="gridWork-box">
+            <div class="gridWork-title">
+              <div class="gridWork-img">
+                <img src="img/work/asistente.jpeg" class="gridWork-icon" />
+              </div>
+              <div class="gridWork-caption">
+                <h5>Asistente educativo</h5>
+                <p>- Asistente educativo con telegram BOT</p>
+              </div>
             </div>
           </div>
-          <div class="itemWork">
-            <div class="itemWork-contenido">
-              <img src="img/work/asistente.jpeg" alt="" />
+
+          <div class="gridWork-box">
+            <div class="gridWork-title">
+              <div class="gridWork-img">
+                <img src="img/work/netflix.jpeg" class="gridWork-icon" />
+              </div>
+              <div class="gridWork-caption">
+                <h5>App de peliculas</h5>
+                <p>- Aplicación de películas con la API de TMDB</p>
+              </div>
             </div>
           </div>
-          <div class="itemWork">
-            <div class="itemWork-contenido">
-              <img src="img/work/asistente.jpeg" alt="" />
+
+          <div class="gridWork-box">
+            <div class="gridWork-title">
+              <div class="gridWork-img">
+                <img src="img/work/generador.png" class="gridWork-icon" />
+              </div>
+              <div class="gridWork-caption">
+                <h5>Generador de paginas web</h5>
+                <p>- Aplicación para generar paginas web</p>
+              </div>
             </div>
           </div>
-          <div class="itemWork">
-            <div class="itemWork-contenido">
-              <img src="img/work/asistente.jpeg" alt="" />
+          <div class="gridWork-box">
+            <div class="gridWork-title">
+              <div class="gridWork-img">
+                <img src="img/work/pokedex.png" class="gridWork-icon" />
+              </div>
+              <div class="gridWork-caption">
+                <h5>Pokedex</h5>
+                <p>- Consumiendo API Pokédex</p>
+              </div>
             </div>
           </div>
+        </div>
+        <section class="gridWork-overlay" id="gridWork-overlay">
+          <div class="gridWorkcontenedor-img">
+            <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+            <img src="" alt="" />
+          </div>
+          <h3 class="gridWork-descripcion"></h3>
+          <a
+            href="#"
+            target="_blank"
+            id="btnPokedex"
+            class="btn btn-theme-outline"
+            >Ver código</a
+          >
         </section>
       </div>
     </div>
@@ -373,7 +412,7 @@
     <!-- <script src="js/detectlanguage.js"></script> -->
     <script src="js/fetch.js"></script>
     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="js/works.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -394,7 +433,6 @@
 
     <script src="js/topbar-virtual.js"></script>
 
-    
     <script
       async
       defer

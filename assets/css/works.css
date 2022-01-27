@@ -40,28 +40,159 @@
   border-radius: 10px;
 }
 .gridWork {
-  position: relative;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s linear 1s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 80px;
+  font-size: 1.25rem;
 }
-.gridWork.imagenes-cargadas {
-  opacity: 1;
-}
-.gridWork .itemWork {
-  position: absolute;
-  display: block;
-  padding: 0;
-  margin: 10px;
-  width: calc(33.333333% - 20px);
-  min-width: 379px;
+.gridWork-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
 }
 
-.gridWork .itemWork-contenido {
-  position: relative;
+.gridWork-box:hover .gridWork-title {
+  transform: translateY(-15px);
 }
-.gridWork .itemWork img {
+.gridWork-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: 0.5s;
+}
+.gridWork-caption {
+  position: relative;
+  bottom: 0;
+  padding: 12px 16px;
   width: 100%;
-  cursor: pointer;
-  vertical-align: top;
+  background-color: #323131;
+  z-index: 11;
+}
+.gridWork-caption h5 {
+  color: #ef3724;
+  font-size: 1.25rem;
+}
+
+.gridWork-caption p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.gridWork-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.gridWork-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  border-radius: 45px 0 0 45px;
+}
+
+.gridWork-icon {
+  width: 100%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 990px) {
+  .gridWork {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gridWork {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridWork-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 999;
+  
+}
+
+.gridWork-overlay.activo {
+  display: flex;
+}
+.gridWorkcontenedor-img {
+  width: 96%;
+  max-width: 600px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+.gridWork-overlay img {
+  width: 100%;
+  height: 100%;
+  transition: transform .5s; 
+ cursor: zoom-in;
+}
+
+.gridWork-overlay .gridWork-descripcion {
+  margin-top: 50px;
+  display: block;
+  color: #ef3724;
+  font-size: 25px;
+}
+#btnPokedex {
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #ef3724;
+}
+#btnPokedex:focus {
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+#btnPokedex:hover {
+  position: relative;
+  bottom: 3px;
+  font-size: 21px;
+  transition: 0.15s;
+  color: #fff;
+}
+
+#btn-cerrar-popup {
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+}
+#btn-cerrar-popup:hover {
+  color: #ef3724;
+}
+#btn-cerrar-popup:focus {
+  outline: none;
 }
